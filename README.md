@@ -16,7 +16,7 @@ According to my understandig / research:
 1.  the only devices that can display 2 digit values which won't be round up to ".5" are temperature sensors
 2.  the only devices that can display percentages are humidity sensors
 
-For a quad port lipo discharger this means that for each lipo one temperature sensor and one humidity sensor is needed to display the voltage level and the discharge percentage. Additionally one temperature sensor for reading the surface temperature will be created. This sums up to 9 devices.
+For a quad port lipo discharger this means that for each lipo **one temperature** sensor and one **humidity sensor** is needed to display the voltage level and the discharge percentage. Additionally one temperature sensor for reading the surface temperature will be created. This sums up to **9 devices**.
 
 Why is the percentage needed - isn't displaying the voltage enough?
 Basically yes, but for displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Furthermore voltage levels differ between 3s,4s and 6s lipos.
