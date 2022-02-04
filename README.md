@@ -8,7 +8,7 @@ Why do you need a "smart home discharger" - no idea,- because it's winter time a
 ![Alt text](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger1_small.jpg)
 
 
-# General information about the HomeKit devices
+# General information about the used HomeKit devices
 
 Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. YTH 9 devices? 
 
@@ -23,7 +23,11 @@ Basically yes, but for displaying the status bar on the ESP32 display and for cr
 
 # How to setup
 
-
+1. Wire the hardware as describe in the wiring_diagram.pdf (do this at your own risk)
+2. Upload the sketch / code to your ESP32
+3. Open the COM/serial port via a terminal program or use the arduino IDE console window
+4. Configure your WLAN settings via the "homespan" CLI. Homespan comes with it's own CLI which can be used via a regular serial interface. simply type "W" in the terminal and follow the instruction on screen. More information can be found here:
+https://github.com/HomeSpan/HomeSpan/blob/master/docs/CLI.md
 
 
 # Libraries used:
