@@ -8,7 +8,7 @@ This is quad Lipo Discharger with Apple Home Kit integration. No matter if you p
 
 # General information about the HomeKit devices
 
-Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. why 9 devices? 
+Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. YTH 9 devices? 
 
 According to my understandig / research: 
 1.  the only devices that can display 2 digit values which won't be round up to ".5" are temperature sensors
