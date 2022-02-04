@@ -3,8 +3,25 @@
 
 This is quad Lipo Discharger with Apple Home Kit integration. No matter if you plug 3s, 4s or 6s lipos, the lipos will be discharged to ~25%-35% which translates in around 3.75V per cell. Once the discharge "percentage" is reached, a push message will be send to the phone. 
 
+![Alt text](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger1_small.jpg)
 
-![Alt text](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger1.jpg)
+
+# General information about the HomeKit devices
+
+Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. why 9 devices? 
+
+According to my understandig / research: 
+1.  the only devices that can display 2 digit values which won't be round up to ".5" are temperature sensors
+2.  the only devices that can display percentages are humidity sensors
+
+For a quad port lipo discharger this means that for each lipo one temperature sensor and one humidity sensor is needed to display the voltage level and the discharge percentage. Additionally one temperature sensor for reading the surface temperature will be created. This sums up to 9 devices.
+
+Why is the percentage needed - isn't displaying the voltage enough?
+Basically yes, but for displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Furthermore voltage levels differ between 3s,4s and 6s lipos.
+
+# How to setup
+
+
 
 
 # Libraries used:
@@ -26,6 +43,7 @@ Thanks for all the great projects libraries:
 
 - Adafruit_BMP280 - for reading the temperature sensor
   https://github.com/adafruit/Adafruit_BMP280_Library
+
 
 
 # Parts:
