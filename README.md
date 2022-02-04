@@ -3,6 +3,8 @@
 
 This is quad Lipo Discharger with Apple Home Kit integration. No matter if you plug 3s, 4s or 6s lipos, the lipos will be discharged to ~25%-35% which translates in around 3.75V per cell. Once the discharge "percentage" is reached, a push message will be send to the phone. 
 
+Why do you need a "smart home discharger" - no idea,- because it's winter time and you might want to build something during the exciting COVID19 quarantine?
+
 ![Alt text](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger1_small.jpg)
 
 
