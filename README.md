@@ -37,10 +37,11 @@ If you want to use of the HomeKit integration:
 Pairing process:
 
 <VIDEO here>
+  
 
 # How to setup the HomeKit automation and push messages
 
-
+blablablalb
 
 
 
