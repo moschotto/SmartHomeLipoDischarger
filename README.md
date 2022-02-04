@@ -8,7 +8,7 @@ Why do you need a "smart home discharger" - no idea,- because it's winter time a
 ![Alt text](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger1_small.jpg)
 
 
-# General information about the used HomeKit devices
+## General information about the used HomeKit devices
 
 Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. YTH 9 devices? 
 
@@ -21,7 +21,7 @@ For a quad port lipo discharger this means that for each lipo **one temperature*
 Why is the percentage needed - isn't displaying the voltage enough?
 Basically yes, but for displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Furthermore voltage levels differ between 3s,4s and 6s lipos.
 
-# How to setup the ESP32
+## How to setup the ESP32
 
 1. Wire the hardware as described in the wiring_diagram.pdf (do this at your own risk)
 2. Upload the sketch / code to your ESP32.
@@ -36,10 +36,10 @@ If you want to use of the HomeKit integration:
 
 Pairing process:
 
-<VIDEO here>
+VIDEO here
   
 
-# How to setup the HomeKit automation and push messages
+## How to setup the HomeKit automation and push messages
 
 blablablalb
 
@@ -51,7 +51,7 @@ blablablalb
 
 
 
-# Libraries used:
+## Libraries used:
 
 Thanks for all the great projects libraries:
 
@@ -73,7 +73,7 @@ Thanks for all the great projects libraries:
 
 
 
-# Parts:
+## Parts:
 - 1 x ESP32 TTGO T-Display 
 - 4 x INA219 current sensors
 - 1 x BMP280 temperature sensor
