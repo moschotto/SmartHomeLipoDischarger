@@ -21,7 +21,7 @@ For a quad port lipo discharger this means that for each lipo **one temperature*
 Why is the percentage needed - isn't displaying the voltage enough?
 Basically yes, but for displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Furthermore voltage levels differ between 3s,4s and 6s lipos.
 
-# How to setup
+# How to setup the ESP32
 
 1. Wire the hardware as described in the wiring_diagram.pdf (do this at your own risk)
 2. Upload the sketch / code to your ESP32.
@@ -38,7 +38,7 @@ Pairing process:
 
 <VIDEO here>
 
-
+# How to setup the HomeKit automation and push messages
 
 
 
@@ -73,12 +73,13 @@ Thanks for all the great projects libraries:
 
 
 # Parts:
-- 1 x TTGO T-Display $~14
-- 4 x INA219 current sensor $~10
-- 1 x 4CH relay $~2
-- 1 x  4.5-28V/3A DC-DC step down $~2
-- 12 x G4 hallogen bulb sockets $~8$
-- 12 x G4 12V/20W hallogen bulbs $~5$
+- 1 x ESP32 TTGO T-Display 
+- 4 x INA219 current sensors
+- 1 x BMP280 temperature sensor
+- 1 x 4 channel 5V relay 
+- 1 x  4.5-28V/3A DC-DC step down 
+- 12 x G4 hallogen bulb sockets 
+- 12 x G4 12V/20W hallogen bulbs 
 
 
 
