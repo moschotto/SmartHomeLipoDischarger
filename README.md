@@ -23,11 +23,31 @@ Basically yes, but for displaying the status bar on the ESP32 display and for cr
 
 # How to setup
 
-1. Wire the hardware as describe in the wiring_diagram.pdf (do this at your own risk)
-2. Upload the sketch / code to your ESP32
-3. Open the COM/serial port via a terminal program or use the arduino IDE console window
-4. Configure your WLAN settings via the "homespan" CLI. Homespan comes with it's own CLI which can be used via a regular serial interface. simply type "W" in the terminal and follow the instruction on screen. More information can be found here:
-https://github.com/HomeSpan/HomeSpan/blob/master/docs/CLI.md
+1. Wire the hardware as described in the wiring_diagram.pdf (do this at your own risk)
+2. Upload the sketch / code to your ESP32.
+3. Done
+
+If you want to use of the HomeKit integration:
+
+1. Open the COM/serial port via any terminal program or use the Arduino IDE Serial Monitor
+2. Configure your WLAN settings via the "homespan" CLI. Homespan comes with it's own CLI which can be used via a regular serial interface. simply type in "W" in the terminal and follow the on-screen instructions. More information can be found here: https://github.com/HomeSpan/HomeSpan/blob/master/docs/CLI.md
+3. check the boot process in the serial monitor (check for errors)
+4. Open the HomeKit APP on your iPhone/iPad/Apple TV to pair the new device(s). Use my default pairing code "11112222" or the homespan default pairing code "46637726". The code can be changed in the setup routine.
+
+Pairing process:
+
+<VIDEO here>
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Libraries used:
