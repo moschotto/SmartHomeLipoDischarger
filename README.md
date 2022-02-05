@@ -11,6 +11,12 @@ If you are experimenting with different bulbs/wattages, don't exceed 3A per lipo
 
 <img src="https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger1.jpg" width=50% height=50%>
 
+
+# Demo
+
+demo video
+
+
 # General information about the used HomeKit devices
 
 Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. YTH 9 devices? 
