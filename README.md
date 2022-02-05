@@ -46,7 +46,13 @@ Because Apple HomeKit and siri shortcuts doesn't support push messages natively,
 
 <img src="https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/IFTTT_5.jpg" width=20% height=20%>|<img src="https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/IFTTT_6.jpg" width=20% height=20%>|<img src="https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/IFTTT_7.jpg" width=20% height=20%>|<img src="https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/IFTTT_8.jpg" width=20% height=20%>
 
-Finally copy the webhook URL (last sceenshot) and replay {event_name} with the name you you entered in the first step. In this example the "LipoStatus"
+Finally copy the webhook URL (last sceenshot) and replace {event} with the name you entered in the first step. In this example the "LipoStatus" and the URL would look like this:
+
+https://maker.ifttt.com/trigger/**LipoStatus**/with/key/dmwULjHgx7ICAB6ozADFD
+
+Note that the URL contains **your personal key** (last section of the URL). This means that everyone that got your URL can trigger push messages on you phone.
+
+Finally, test it. Simply copy the URL into the browser and check if you receive a push message.
 
 
 ## Setup HomeKit automation:
