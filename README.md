@@ -64,7 +64,7 @@ Finally, test it. Simply copy the URL into the browser and check if you receive 
 
 ## Setup HomeKit automation:
 
-12345
+Follow the instructions in the video and repat it for each lipo
 
 
 
