@@ -40,12 +40,21 @@ For displaying the status bar on the ESP32 display and for creating HomeKit auto
    
 5. Done
 
-If you want to use of the HomeKit integration:
+## If you want to use of the HomeKit integration:
 
 1. Open the COM/serial port via any terminal program or use the Arduino IDE Serial Monitor
 2. Configure your WLAN settings via the "homespan" CLI. Homespan comes with it's own CLI which can be used via a regular serial interface. simply type in "W" in the terminal and follow the on-screen instructions. More information can be found here: https://github.com/HomeSpan/HomeSpan/blob/master/docs/CLI.md
 3. check the boot process in the serial monitor (check for errors)
 4. Finaly open the HomeKit APP on your iPhone/iPad/Apple TV and pair the new device(s). Use my default pairing code "11112222" or the homespan default pairing code "46637726". The code can be changed in the setup routine.
+
+
+Note:
+If you delete the sensors within HomeKit, the discharger keeps its pairing information. This leads to problems when you want to re-add them (the device won't be discoverable anymore). Reset is possible via a browser. Type in the following URL:  
+
+"IP address of your ESP32/reset" i.e. 10.0.0.120/reset
+
+ After that, the device reboots and shoul be discoverable by HomeKit again.
+   
 
 
 # How to setup push messages and HomeKit automation
