@@ -16,20 +16,6 @@ If you are experimenting with different bulbs/wattages, don't exceed 3A per lipo
 
 https://user-images.githubusercontent.com/10543292/152687552-6f898d41-0c4c-42cd-b456-d83bac421a67.mp4
 
-
-# General information about the used HomeKit devices
-
-Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. YTH 9 devices? 
-
-According to my understandig / research: 
-1.  the only devices that can display 2 digit values which won't be round up to ".5" are temperature sensors
-2.  the only devices that can display percentages are humidity sensors
-
-For a quad port lipo discharger this means that for each lipo **1x temperature** sensor and **1x humidity sensor** is needed to display the voltage level and the discharge percentage. Additionally one temperature sensor for reading the surface temperature will be created - makes 9 devices...
-
-Why is the percentage used instead just the voltage?
-For displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Because voltage levels differ between 3s,4s and 6s lipos you can simply automate it with "if percentage drops below 20% then......."
-
 # How to setup the ESP32
 
 1. Wire the hardware as described in the wiring_diagram.pdf (do this at your own risk)
@@ -68,6 +54,20 @@ https://user-images.githubusercontent.com/10543292/152686966-74a350e1-0f22-4adf-
 You must setup the HomeKit automation for each lipo in the same way. The only thing that needs to be changed is value1=4 to value1=1 for lipo 1, value1=2 for lipo2 etc etc.
 
 Note that the URL contains **your personal key** (last section of the URL). This means that everyone that got your URL, can trigger push messages on your phone.
+
+
+# General information about the used HomeKit devices
+
+Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. YTH 9 devices? 
+
+According to my understandig / research: 
+1.  the only devices that can display 2 digit values which won't be round up to ".5" are temperature sensors
+2.  the only devices that can display percentages are humidity sensors
+
+For a quad port lipo discharger this means that for each lipo **1x temperature** sensor and **1x humidity sensor** is needed to display the voltage level and the discharge percentage. Additionally one temperature sensor for reading the surface temperature will be created - makes 9 devices...
+
+Why is the percentage used instead just the voltage?
+For displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Because voltage levels differ between 3s,4s and 6s lipos you can simply automate it with "if percentage drops below 20% then......."
 
 
 # Libraries used:
