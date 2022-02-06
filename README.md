@@ -52,11 +52,9 @@ For displaying the status bar on the ESP32 display and for creating HomeKit auto
 Note:
 If you delete the sensors within HomeKit, the discharger keeps its pairing information. This leads to problems when you want to re-add them (the device won't be discoverable anymore). Reset is possible via a browser or via serial interace or the homespan CLI. 
 
-The simplest way is to type in the following URL:  
+The simplest way is to type in the following URL: "IP address of your ESP32/reset" for example i.e. 10.0.0.120/reset
 
-"IP address of your ESP32/reset" i.e. 10.0.0.120/reset
-
- After that, the device reboots and shoul be discoverable by HomeKit again.
+After that, the device reboots and shoul be discoverable by HomeKit again.
    
 
 
