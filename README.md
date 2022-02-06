@@ -72,7 +72,7 @@ For displaying the status bar on the ESP32 display and for creating HomeKit auto
 
 # Libraries used:
 
-Thanks for all the great projects libraries:
+Thanks for all the great projects / libraries:
 
 
 - HomeSpan -  for creating your own ESP32-based HomeKit devices
