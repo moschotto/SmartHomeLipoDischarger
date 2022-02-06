@@ -34,19 +34,19 @@ For displaying the status bar on the ESP32 display and for creating HomeKit auto
 
 1. Wire the hardware as described in the wiring_diagram.pdf (do this at your own risk)
 2. Upload the sketch / code to your ESP32.
-3. Done
+3. Extract the animation images from animation_pics_pics.zip, put it into the "data" folder and upload to SPIFSS via ARDUINO GUI
+
+   [How to Upload data to ESP32](https://randomnerdtutorials.com/install-esp32-filesystem-uploader-arduino-ide/)
+   
+5. Done
 
 If you want to use of the HomeKit integration:
 
 1. Open the COM/serial port via any terminal program or use the Arduino IDE Serial Monitor
 2. Configure your WLAN settings via the "homespan" CLI. Homespan comes with it's own CLI which can be used via a regular serial interface. simply type in "W" in the terminal and follow the on-screen instructions. More information can be found here: https://github.com/HomeSpan/HomeSpan/blob/master/docs/CLI.md
 3. check the boot process in the serial monitor (check for errors)
-4. Open the HomeKit APP on your iPhone/iPad/Apple TV to pair the new device(s). Use my default pairing code "11112222" or the homespan default pairing code "46637726". The code can be changed in the setup routine.
+4. Finaly open the HomeKit APP on your iPhone/iPad/Apple TV and pair the new device(s). Use my default pairing code "11112222" or the homespan default pairing code "46637726". The code can be changed in the setup routine.
 
-Pairing process:
-
-VIDEO here
-  
 
 # How to setup push messages and HomeKit automation
 
