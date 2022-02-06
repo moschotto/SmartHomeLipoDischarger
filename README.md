@@ -48,8 +48,9 @@ For displaying the status bar on the ESP32 display and for creating HomeKit auto
 4. Finaly open the HomeKit APP on your iPhone/iPad/Apple TV and pair the new device(s). Use my default pairing code "11112222" or the homespan default pairing code "46637726". The code can be changed in the setup routine.
 
 
+
 Note:
-If you delete the sensors within HomeKit, the discharger keeps its pairing information. This leads to problems when you want to re-add them (the device won't be discoverable anymore). Reset is possible via a browser. Type in the following URL:  
+If you delete the sensors within HomeKit, the discharger keeps its pairing information. This leads to problems when you want to re-add them (the device won't be discoverable anymore). Reset is possible via a browser or via serial interace and the homespan CLI. Type in the following URL:  
 
 "IP address of your ESP32/reset" i.e. 10.0.0.120/reset
 
