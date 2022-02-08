@@ -5,9 +5,9 @@ This is quad Lipo Discharger with Apple Home Kit integration. No matter if you p
 
 In my tests, the temperature was arround 70C after 15-20 minutes. Depending on the voltage and bulb wattage (i used 3 x 20W per lipo), the discharge current is arround 1.1 - 1.4 amps.
 
-### CAUTION: 
+### :exclamation: CAUTION: 
 If you are experimenting with different bulbs/wattages, don't exceed 3A per lipo. The INA219 currentsensor is only rated up to 3.2A !!!
-
+<br/>
 
 <img src="https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger.jpg" width=50% height=50%>
 
@@ -51,23 +51,23 @@ Because Apple HomeKit and siri shortcuts doesn't support push messages natively,
 
 https://user-images.githubusercontent.com/10543292/152686966-74a350e1-0f22-4adf-b1d0-36e1d32a19c3.mp4
 
-You must setup the HomeKit automation for each lipo in the same way. The only thing that needs to be changed is value1=4 to value1=1 for lipo 1, value1=2 for lipo2 etc etc.
+You must setup the HomeKit automation for each lipo in the same way. The only thing that needs to be changed during the automation setup is value1=4 to value1=1 for lipo 1, value1=2 for lipo2 etc etc.
 
 Note that the URL contains **your personal key** (last section of the URL). This means that everyone that got your URL, can trigger push messages on your phone.
 
 
 # General information about the used HomeKit devices
 
-Basiscally the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit  homekit. YTH 9 devices? 
+Basically the code creates 9 Apple HomeKit deivces that can be paired with your HomeKit. YTH 9 devices? 
 
 According to my understandig / research: 
 1.  the only devices that can display 2 digit values which won't be round up to ".5" are temperature sensors
 2.  the only devices that can display percentages are humidity sensors
 
-For a quad port lipo discharger this means that for each lipo **1x temperature** sensor and **1x humidity sensor** is needed to display the voltage level and the discharge percentage. Additionally one temperature sensor for reading the surface temperature will be created - makes 9 devices...
+For a quad port lipo discharger this means for each lipo **1x temperature** sensor and **1x humidity sensor** is needed to display the voltage level AND the discharge percentage. Additionally one temperature sensor for reading the surface temperature will be created - makes 9 devices...
 
 Why is the percentage used instead just the voltage?
-For displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Because voltage levels differ between 3s,4s and 6s lipos you can simply automate it with "if percentage drops below 20% then......."
+For displaying the status bar on the ESP32 display and for creating HomeKit automations, it's much easier to use the percentage instead of the voltage. Because voltage levels differ between 3s,4s and 6s lipos you can simply automate it with: "if percentage drops below 20% then......."
 
 
 # Libraries used:
@@ -75,19 +75,19 @@ For displaying the status bar on the ESP32 display and for creating HomeKit auto
 Thanks for all the great projects / libraries:
 
 
-- HomeSpan -  for creating your own ESP32-based HomeKit devices
+- HomeSpan -  for creating your own ESP32-based HomeKit devices<br/>
   https://github.com/HomeSpan/
   
-- TFT_eSPI - for driving the display
+- TFT_eSPI - for driving the display<br/>
   https://github.com/Bodmer/TFT_eSPI
   
-- TJpg_Decoder - for startup animation / reading files from internal ESP32 memory (SPIFSS)
+- TJpg_Decoder - for startup animation / reading files from internal ESP32 memory (SPIFSS)<br/>
   https://github.com/Bodmer/TJpg_Decoder
   
-- INA219_WE - voltage/current sensor
+- INA219_WE - voltage/current sensor<br/>
   https://github.com/wollewald/INA219_WE 
 
-- Adafruit_BMP280 - for reading the temperature sensor
+- Adafruit_BMP280 - for reading the temperature sensor<br/>
   https://github.com/adafruit/Adafruit_BMP280_Library
 
 
@@ -101,7 +101,9 @@ Thanks for all the great projects / libraries:
 - 12 x G4 hallogen bulb sockets 
 - 12 x G4 12V/20W hallogen bulbs 
 
-# Printable case:
+# Printable case / housing:
+https://www.thingiverse.com/thing:5238418
+
 
 
 
