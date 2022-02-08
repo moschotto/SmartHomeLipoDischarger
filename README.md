@@ -11,6 +11,8 @@ If you are experimenting with different bulbs/wattages, don't exceed 3A per lipo
 
 <img src="https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger.jpg" width=50% height=50%>
 
+# Lipo safety
+https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/
 
 # Demo
 
@@ -104,7 +106,4 @@ Thanks for all the great projects / libraries:
 # Printable case / housing:
 :computer: https://www.thingiverse.com/thing:5238418
 
-
-# Lipo safety
-https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/
 
