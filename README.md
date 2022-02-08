@@ -1,4 +1,4 @@
-# "Smart-Home" Lipo Discharger 
+# :battery: "Smart-Home" Lipo Discharger 
 
 
 This is quad Lipo Discharger with Apple Home Kit integration. No matter if you plug 3s, 4s or 6s lipos, the lipos will be discharged to ~25%-35% (around 3.75V per cell). Once the discharge "percentage" is reached, a push message will be send to the phone. Because halogen bulbs can get hot rapidly, i added a temperature sensor for checking the surface temperature - if the temperature reaches a certain level (e.g. 100C) the Discharger will shutdown. 
@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/10543292/152687552-6f898d41-0c4c-42cd-
 
 # How to setup the ESP32
 
-1. Wire the hardware as described in the wiring_diagram.pdf (do this at your own risk)
+1. Wire the hardware as described in the :electric_plug:[wiring diagram](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/wiring_diagram.pdf) (do this at your own risk)
 2. Upload the sketch / code to your ESP32.
 3. Extract the animation images from animation_pics_pics.zip, put it into the "data" folder and upload to SPIFSS via ARDUINO GUI
 
@@ -75,19 +75,19 @@ For displaying the status bar on the ESP32 display and for creating HomeKit auto
 Thanks for all the great projects / libraries:
 
 
-- HomeSpan -  for creating your own ESP32-based HomeKit devices<br/>
+- :green_book:HomeSpan -  for creating your own ESP32-based HomeKit devices<br/>
   https://github.com/HomeSpan/
   
-- TFT_eSPI - for driving the display<br/>
+- :green_book:TFT_eSPI - for driving the display<br/>
   https://github.com/Bodmer/TFT_eSPI
   
-- TJpg_Decoder - for startup animation / reading files from internal ESP32 memory (SPIFSS)<br/>
+- :green_book:TJpg_Decoder - for startup animation / reading files from internal ESP32 memory (SPIFSS)<br/>
   https://github.com/Bodmer/TJpg_Decoder
   
-- INA219_WE - voltage/current sensor<br/>
+- :green_book:INA219_WE - voltage/current sensor<br/>
   https://github.com/wollewald/INA219_WE 
 
-- Adafruit_BMP280 - for reading the temperature sensor<br/>
+- :green_book:Adafruit_BMP280 - for reading the temperature sensor<br/>
   https://github.com/adafruit/Adafruit_BMP280_Library
 
 
@@ -102,8 +102,9 @@ Thanks for all the great projects / libraries:
 - 12 x G4 12V/20W hallogen bulbs 
 
 # Printable case / housing:
-https://www.thingiverse.com/thing:5238418
+:computer: https://www.thingiverse.com/thing:5238418
 
 
-
+# Lipo safety
+https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/
 
