@@ -9,7 +9,7 @@ In my tests, the temperature was arround 70C after 15-20 minutes. Depending on t
 If you are experimenting with different bulbs/watts, don't exceed 3A per lipo. The INA219 currentsensor is only rated up to 3.2A !!!
 <br/>
 
-![image_charger](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger.jpg)
+![image_charger](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger.png)
 
 
 # Lipo safety
