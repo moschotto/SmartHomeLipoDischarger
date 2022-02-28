@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/10543292/152687552-6f898d41-0c4c-42cd-
    
 5. Done
 
-## If you want to use of the HomeKit integration:
+## If you want to use the HomeKit integration:
 
 1. Open the COM/serial port via any terminal program or use the Arduino IDE Serial Monitor
 2. Configure your WLAN settings via the "homespan" CLI. Homespan comes with it's own CLI which can be used via a regular serial interface. simply type in "W" in the terminal and follow the on-screen instructions. More information can be found here: https://github.com/HomeSpan/HomeSpan/blob/master/docs/CLI.md
