@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/10543292/152687552-6f898d41-0c4c-42cd-
 
 1. Wire the hardware as described in the :electric_plug:[wiring diagram](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/wiring_diagram.pdf) (do this at your own risk)
 2. Upload the sketch / code to your ESP32.
-3. Extract the animation images from animation_pics_pics.zip, put it into the "data" folder and upload to SPIFSS via ARDUINO GUI
+3. Extract the animation images from animation_pics.zip (see media folder), put it into the "data" folder and upload to SPIFSS via ARDUINO GUI
 
    [How to Upload data to ESP32](https://randomnerdtutorials.com/install-esp32-filesystem-uploader-arduino-ide/)
    
