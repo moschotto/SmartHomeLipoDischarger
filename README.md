@@ -7,6 +7,11 @@ In my tests, the temperature was arround 70C after 15-20 minutes. Depending on t
  ### :exclamation:  Lipo safety: 
 Do this at your own risk and read the getFPV.com lipo safety guide! 
 
+https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/
+
+If always charge and discharge lipo batteries outside, respectively in a fireproof environment i.e. outside
+
+
 ### :exclamation: CAUTION: 
 If you are experimenting with different bulbs/watts, don't exceed 3A per lipo. The INA219 currentsensor is only rated up to 3.2A !!!
 <br/>
