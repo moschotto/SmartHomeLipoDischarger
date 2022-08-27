@@ -20,8 +20,9 @@ If you are experimenting with different bulbs/watts, don't exceed 3A per lipo. T
 
 # Demo
 
-[![Demo](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=FhXnf4CWIPM)
+[![Link to youtube](http://img.youtube.com/vi/FhXnf4CWIPM/0.jpg)](http://www.youtube.com/watch?v=FhXnf4CWIPM)
 
+https://www.youtube.com/watch?v=FhXnf4CWIPM
 
 # How to setup the ESP32
 
