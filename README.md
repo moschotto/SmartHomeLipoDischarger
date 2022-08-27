@@ -26,7 +26,7 @@ https://www.youtube.com/watch?v=FhXnf4CWIPM
 
 # How to setup the ESP32
 
-1. Wire the hardware as described in the :electric_plug:[wiring diagram](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/wiring_diagram.pdf) and set the I2C addresses of the INA219 sensors to 0x40,0x41,0x42 and 0x43 (check the ina219 datasheet for instructions)
+1. Wire the hardware as described in the :electric_plug:[wiring diagram](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/wiring_diagram.pdf) and set the I2C addresses of the INA219 sensors to 0x40,0x41,0x44 and 0x45 (check the ina219 datasheet for instructions)
 2. Upload the sketch / code to your ESP32.
 3. Extract the animation images from animation_pics.zip (see media folder), put it into the "data" folder and upload to SPIFSS via ARDUINO GUI
 
