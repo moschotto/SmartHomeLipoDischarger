@@ -1,19 +1,17 @@
 # :battery: "Smart Home" Lipo Discharger 
 
-
 This is quad Lipo Discharger with Apple Home Kit integration based on ESP32. No matter if you plug 3s, 4s or 6s lipos, the lipos will be discharged to ~25%-35% (around 3.75V per cell). Once the discharge "percentage" is reached, a push message will be send to the phone. Because halogen bulbs can get hot rapidly, i added a temperature sensor for checking the surface temperature - if the temperature reaches a certain level (e.g. 100C) the Discharger will shutdown. 
 
 In my tests, the temperature was arround 70C after 15-20 minutes. Depending on the voltage and bulb watts (i used 3 x 20W per lipo), the discharge current is arround 1.1 - 1.4 amps.
+
+ ### :exclamation:  Lipo safety: 
+Do this at your own risk and read the getFPV.com lipo safety guide! 
 
 ### :exclamation: CAUTION: 
 If you are experimenting with different bulbs/watts, don't exceed 3A per lipo. The INA219 currentsensor is only rated up to 3.2A !!!
 <br/>
 
 ![image_charger](https://github.com/moschotto/SmartHomeLipoDischarger/blob/main/media/Lipo_Discharger.jpg)
-
-
-# Lipo safety
-https://www.getfpv.com/learn/fpv-essentials/drone-battery-safety/
 
 # Demo
 
